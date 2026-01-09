@@ -276,6 +276,16 @@ body {
     grid-template-columns: 1fr;
   }
 
+  .nav {
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+  }
+
+  .nav a {
+    white-space: nowrap;
+  }
+
   .hero {
     padding: 36px 0 18px;
   }
@@ -304,12 +314,13 @@ body {
 
   .nav {
     width: 100%;
-    justify-content: center;
-    gap: 10px;
+    justify-content: space-between;
+    gap: 6px;
   }
 
   .nav a {
-    padding: 10px 12px;
+    padding: 8px 10px;
+    font-size: 14px;
   }
 
   .hero-copy h1 {
